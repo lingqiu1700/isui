@@ -1,16 +1,38 @@
+---
+const pageTitle="关于tayori";
+const tayori ={
+  isui:"倚水",
+  raku:"raku",
+  ta:"tazuneru",
+  bf:"https://tayori.bitfan.id/",
+  rt:"raku和tazuneru",
+  uta:["「風のたより」","「花がら」","「鯨の背中」","「可惜夜」","「ワンダー」","「ユートピア」","「Stargazer」","「月の唄」"]
+};
+const islet =["「春を待つ」（Islet feat.倚水）","「白日夢」 （Islet feat.倚水）","「星になる」（Islet feat.倚水）"]
+---
 <html lang="zh-cn">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type ="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content = {Astro.generator} >
-    <title>测试用2</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
     <a href="/">首页</a>
     <a href="/about/">关于</a>
-    <h1>给倚水的站点</h1>
-    <h1>关于倚水</h1>
+    <h1>{pageTitle}</h1>
+    <p>以下是{pageTitle}的部分情况</p>
+    <ul>
+      <li>乐队的主唱是{tayori.isui}。</li>
+      <li>乐队的作曲作词一般由{tayori.rt}负责</li>
+      {islet.length >=2 &&
+      <li>乐队成立前制作的歌曲有:{islet}</li>}
+    </ul>
+    <p>成立乐队后制作的曲子有：</p>
+    <ul>
+      {tayori.uta.map((song) => <li>{song}</li>)}
+    </ul>
     <h2>www</h2>
   </body>
 </html>
