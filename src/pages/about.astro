@@ -6,8 +6,9 @@ const tayori ={
   ta:"tazuneru",
   bf:"https://tayori.bitfan.id/",
   rt:"raku和tazuneru",
-  uta:["「風のたより」","「花がら」","「鯨の背中」","「可惜夜」","「ワンダー」","「ユートピア」","「Stargazer」","「月の唄」"]
+  uta:["「風のたより」","「花がら」","「鯨の背中」","「メメント」","「可惜夜」","「ワンダー」","「ユートピア」","「Stargazer」","「月の唄」"]
 };
+const links = ["/sounds/t1.ogg"]
 const islet =["「春を待つ」（Islet feat.倚水）","「白日夢」 （Islet feat.倚水）","「星になる」（Islet feat.倚水）"]
 ---
 <html lang="zh-cn">
@@ -17,6 +18,40 @@ const islet =["「春を待つ」（Islet feat.倚水）","「白日夢」 （Is
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content = {Astro.generator} >
     <title>{pageTitle}</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #88ebd7;
+      }
+      a {
+        text-decoration: none;
+        color: #345246;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 5px;
+      }
+      a:hover {
+        background-color: #46e8cd;
+      }
+      h1 {
+        color: #333;
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+      ul {
+        list-style-type: none;
+        padding-left: 10px;
+      }
+      .skill {
+        background-color: #46e8cd;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
     <a href="/">首页</a>
@@ -31,7 +66,7 @@ const islet =["「春を待つ」（Islet feat.倚水）","「白日夢」 （Is
     </ul>
     <p>成立乐队后制作的曲子有：</p>
     <ul>
-      {tayori.uta.map((song) => <li>{song}</li>)}
+      {tayori.uta.map((song,index) => <li class="skill">{song}:<a href={links[index]} target="_blank">前往查看</a></li>)}
     </ul>
     <h2>www</h2>
   </body>
