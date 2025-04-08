@@ -6,9 +6,9 @@ const tayori ={
   ta:"tazuneru",
   bf:"https://tayori.bitfan.id/",
   rt:"raku和tazuneru",
-  uta:["「風のたより」","「花がら」","「鯨の背中」","「メメント」","「可惜夜」","「ワンダー」","「ユートピア」","「Stargazer」","「月の唄」"]
+  uta:["「風のたより」","「星になる」","「春を待つ」","「白日夢」","「花がら」","「ビビッド」","「鯨の背中」","「雪解け」","「夢遊」","「深夜特急」","「メメント」","「月の唄」"]
 };
-const links = ["/sounds/t1.ogg"]
+const links = ["/src/pages/sounds/t1.ogg", "/src/pages/sounds/t2.ogg", "/src/pages/sounds/t3.ogg", "/src/pages/sounds/t4.ogg", "/src/pages/sounds/t5.ogg", "/src/pages/sounds/t6.ogg", "/src/pages/sounds/t7.ogg", "/src/pages/sounds/t8.ogg", "/src/pages/sounds/t9.ogg", "/src/pages/sounds/t10.ogg", "/src/pages/sounds/t11.ogg", "/src/pages/sounds/yue.ogg"];
 const islet =["「春を待つ」（Islet feat.倚水）","「白日夢」 （Islet feat.倚水）","「星になる」（Islet feat.倚水）"]
 ---
 <html lang="zh-cn">
@@ -64,7 +64,7 @@ const islet =["「春を待つ」（Islet feat.倚水）","「白日夢」 （Is
       {islet.length >=2 &&
       <li>乐队成立前制作的歌曲有:{islet}</li>}
     </ul>
-    <p>成立乐队后制作的曲子有：</p>
+    <p>成立乐队后发布的memento专辑内歌曲有：</p>
     <ul>
       {tayori.uta.map((song,index) => <li class="skill">{song}:<a href={links[index]} target="_blank">前往查看</a></li>)}
     </ul>
