@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #88ebd7;
+  }
+  a {
+    text-decoration: none;
+    color: #345246;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  a:hover {
+    background-color: #46e8cd;
+  }
+  h1 {
+    color: #333;
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 10px;
+  }
+  .skill {
+    background-color: #46e8cd;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  .zhong {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+  .biaoti {
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    margin-bottom: 10px;
+  }

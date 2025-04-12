@@ -1,0 +1,93 @@
+---
+import { Howl } from 'howler';
+---
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>春を待つ</title>
+    <script src="./pages/posts/js/script.js" defer></script>
+    <meta name="description" content="这是我 Astro 博客的第一篇文章。">
+    <meta name="author" content="Astro 学习者">
+    <meta name="tags" content="astro, blogging, learning in public">
+    <link rel="icon" href="https://docs.astro.build/assets/rose.webp" type="image/webp">
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+    background-color: #d386ef75;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+        }
+        #player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#cover {
+  width: 200px;
+  height: 112.6px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+button:hover {
+  background-color: #50c198a2;
+  cursor: pointer;
+  transition: background-color 0.3s ease;}
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>春を待つ</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>歌曲制作</h2>
+            <p>
+                Vocal: 倚水<br>
+                <a href="https://x.com/_isui_">倚水推特</a>
+            </p>
+            <p>
+                Music & Lyrics: Islet<br>
+                <a href="https://x.com/tayori_tri">现tayori</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>歌词</h2>
+            <ol>
+                <li>日文歌词</li>
+                <li>播放测试<br>
+                    <div id="player">
+                        <img id="cover" src="https://i.postimg.cc/v8535KnG/c7c120a18f4d3fe93fcaef4648d83e9a.jpg" alt="专辑封面">
+                        <button id="play">播放</button>
+                        <button id="pause">暂停</button>
+                      </div>
+                      </li>
+                <li>发表博客文章：这是我的第一篇博客文章！我现在有用 Astro 编写的页面和用 Markdown 写的文章了！</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>下一步计划</h2>
+            <p>
+                我将完成 Astro 教程，然后继续编写更多内容。关注我以获取更多信息。
+                <audio src="https://github.com/lingqiu1700/isui/raw/refs/heads/master/src/pages/sounds/t3.ogg"></audio>
+            </p>
+        </section>
+    </main>
+</body>
+</html>
